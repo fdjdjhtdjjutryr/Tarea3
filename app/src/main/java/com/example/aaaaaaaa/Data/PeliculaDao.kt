@@ -19,9 +19,9 @@ interface PeliculaDao {
     @Delete
     suspend fun delete(pelicula: Pelicula)
 
-    @Query("SELECT * from peliculasDatabase WHERE id = :id")
+    @Query("SELECT * from peliculas WHERE id = :id")
     fun getItem(id:Int): Flow<Pelicula>
 
-    @Query("SELECT * from peliculasDatabase ORDER BY nombre ASC")
+    @Query("SELECT * from peliculas ORDER BY nombre ASC")
     fun getAllItems(): Flow<List<Pelicula>>
 }

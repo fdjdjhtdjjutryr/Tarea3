@@ -8,6 +8,6 @@ interface AppContainer {
 
 class AppDataContainer(private val context: Context) : AppContainer{
     override val peliculasRepository: PeliculaRepository by lazy{
-        LocalPeliculaRepository(AppDatabase.getDatabase(context), peliculaDao())
+        LocalPeliculaRepository(AppDatabase.getDatabase(context).peliculaDao())
     }
 }
