@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MediaExplorer</string>
+    <string name="agregar_pelicula">Agregar Pelicula</string>
+    <string name="volver_menu">Volver al menu Principal</string>
+    <string name="nombre_pelicula">Nombre de la Pelicula</string>
+    <string name="anio_pelicula">Anio (SOLO NUMEROS)</string>
+    <string name="rating_imdb">Rating IMDB</string>
+</resources>
